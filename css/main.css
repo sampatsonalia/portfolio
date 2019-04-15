@@ -1,0 +1,45 @@
+/* Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border` */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+/* write your custom styling from this point forward */
+
+h1 {
+  font-size: 24px;
+  color: #000000;
+}
+
+.nav-item ul {
+    list-style-type: none;
+    display: block;
+    padding: 20px;
+    animation: fadein 1.5s ease-in;
+}
+
+.nav-item li {
+    display: inline-block;
+    padding: 0px 20px;
+    margin: 20px;
+}
+
+.nav-item ul li a {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
