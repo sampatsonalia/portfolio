@@ -15,8 +15,28 @@ html {
   content: "";
 }
 
-/* write your custom styling from this point forward */
+.content { 
+  display: grid;
+}
 
+.name { 
+  font-size: 24px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+}
+/* 
+
+flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80vh;write your custom styling from this point forward */
+
+
+
+
+/* OLD CSS 
 h1 {
   font-size: 24px;
   color: #000000;
@@ -43,4 +63,4 @@ h1 {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 5px;
-}
+} */
